@@ -8,7 +8,6 @@ import axios from "axios"
 
 // Components
 import CardItem from "./CardItem"
-import CardColumns from "react-bootstrap/CardColumns"
 
 const ListUsers = () => {
 	const [listusers, setListUsers] = useState(null)
@@ -27,7 +26,7 @@ const ListUsers = () => {
 	return (
 		<div>
 			{listusers !== null ? (
-				listusers.map((user, index) => {
+				listusers.map((user) => {
 					console.log(user)
 					return (
 						<>

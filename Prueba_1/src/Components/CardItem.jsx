@@ -5,7 +5,8 @@ import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 
 import Modal from "react-bootstrap/Modal"
-import Post from "./Post"
+import Post from "./Post/Post"
+import Todo from "./Todos/Todo"
 
 const CardItem = (props) => {
 	const [infoCard, setInfoCard] = useState(null)
@@ -21,7 +22,7 @@ const CardItem = (props) => {
 			{infoCard === null ? (
 				<div>Missing info</div>
 			) : (
-				<>
+				<div key={infoCard.id}>
 					<Button
 						block
 						size="lg"
@@ -55,10 +56,11 @@ const CardItem = (props) => {
 							</Card.Body>
 							<Card.Footer>
 								<Post id={infoCard.id} />
+								<Todo id={infoCard.id} />
 							</Card.Footer>
 						</Card>
 					</Modal>
-				</>
+				</div>
 			)}
 		</>
 	)
