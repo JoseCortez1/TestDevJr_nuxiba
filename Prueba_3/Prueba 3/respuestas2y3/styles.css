@@ -1,0 +1,88 @@
+/** @format */
+p,
+th,
+tr,
+input,
+td {
+	font-family: "Comic Neue", cursive;
+}
+th,
+td {
+	width: 100px;
+}
+body {
+	background-color: #a82c23;
+}
+.generator {
+	padding: 15px;
+	margin: 10px 0;
+	background-color: #e3f556;
+	color: #a82c23;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 15px;
+
+	cursor: pointer;
+	border-radius: 10px 20px 10px 20px;
+}
+.generator:hover {
+	transition: ease-in-out all 0.5s;
+	border-radius: 30px 5px 30px 5px;
+	background-color: #929e37;
+	transform: translate(-1, -1);
+}
+.container {
+	display: block;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.table {
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+.element {
+	width: 200px;
+}
+
+.table__header {
+	background-color: #2c69a8;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.table__body {
+	border: 1px solid #ccc;
+}
+.par {
+	cursor: pointer;
+	background-color: #f5554b;
+}
+.par:hover {
+	transition: ease-in-out all 1s;
+	background-color: #6e2621;
+	color: white;
+	-webkit-box-shadow: 0px 0px 81px 81px rgba(110, 38, 33, 1);
+	-moz-box-shadow: 0px 0px 81px 81px rgba(110, 38, 33, 1);
+	box-shadow: 0px 0px 81px 81px rgba(110, 38, 33, 1);
+}
+.none {
+	cursor: pointer;
+	background-color: #3393f5;
+}
+.none:hover {
+	transition: ease-in-out all 1s;
+	background-color: #184877;
+	color: white;
+	-webkit-box-shadow: 0px 0px 81px 81px rgba(24, 72, 119, 1);
+	-moz-box-shadow: 0px 0px 81px 81px rgba(24, 72, 119, 1);
+	box-shadow: 0px 0px 81px 81px rgba(24, 72, 119, 1);
+}
+
+.row {
+	height: 100px;
+	color: black;
+	border: 1px solid #e3f556;
+}
